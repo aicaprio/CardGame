@@ -46,5 +46,5 @@ class CardModel{
         }
     }
     
-    //TODO Shuffle the cards.
+    // MARK:  Shuffle the cards.
 }

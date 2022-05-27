@@ -17,6 +17,18 @@
 		7D99A66C283FA6BE00EAD95C /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D99A66B283FA6BE00EAD95C /* CardModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7DF4A8F528410684006B0F12 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7D141826283E534B00DBCF45 /* CardGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D141829283E534B00DBCF45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,10 +40,11 @@
 		7D141837283E534D00DBCF45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D99A669283FA68A00EAD95C /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7D99A66B283FA6BE00EAD95C /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		7DF4A8F02841061A006B0F12 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7D141823283E534B00DBCF45 /* Frameworks */ = {
+		7DF4A8F228410671006B0F12 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +59,7 @@
 			children = (
 				7D141828283E534B00DBCF45 /* CardGame */,
 				7D141827283E534B00DBCF45 /* Products */,
+				7DF4A8EF2841061A006B0F12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,16 +87,37 @@
 			path = CardGame;
 			sourceTree = "<group>";
 		};
+		7DF4A8EF2841061A006B0F12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DF4A8F02841061A006B0F12 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7DF4A8F328410680006B0F12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		7D141825283E534B00DBCF45 /* CardGame */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7D14183A283E534D00DBCF45 /* Build configuration list for PBXNativeTarget "CardGame" */;
 			buildPhases = (
+				7DF4A8F328410680006B0F12 /* Headers */,
 				7D141822283E534B00DBCF45 /* Sources */,
-				7D141823283E534B00DBCF45 /* Frameworks */,
 				7D141824283E534B00DBCF45 /* Resources */,
+				7DF4A8F228410671006B0F12 /* Frameworks */,
+				7DF4A8F428410683006B0F12 /* ShellScript */,
+				7DF4A8F528410684006B0F12 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -138,6 +173,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7DF4A8F428410683006B0F12 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7D141822283E534B00DBCF45 /* Sources */ = {
